@@ -1,8 +1,6 @@
 import { Download, Mail, Linkedin, FileText } from 'lucide-react';
-import { Link } from "react-router-dom";
 import { Button } from '@/components/ui/button';
 import profileImage from '@/assets/mugesh-profile.jpg';
-import { useNavigate } from "react-router-dom";
 
 
 const Hero = () => {
