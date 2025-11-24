@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Menu, X, Download } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { HashLink } from 'react-router-hash-link';
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -31,20 +32,21 @@ const Navigation = () => {
     >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between">
-          <a href="#hero" className="text-2xl font-bold gradient-text">
+          <HashLink smooth to="#hero" className="text-2xl font-bold gradient-text">
             MG
-          </a>
+          </HashLink>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
             {navItems.map((item) => (
-              <a
+              <HashLink
                 key={item.href}
-                href={item.href}
+                smooth
+                to={item.href}
                 className="text-foreground/80 hover:text-primary transition-colors duration-300 font-medium"
               >
                 {item.label}
-              </a>
+              </HashLink>
             ))}
             <Button
               asChild
@@ -71,14 +73,15 @@ const Navigation = () => {
         {isMobileMenuOpen && (
           <div className="md:hidden mt-4 glass rounded-lg p-4 space-y-4">
             {navItems.map((item) => (
-              <a
+              <HashLink
                 key={item.href}
-                href={item.href}
+                smooth
+                to={item.href}
                 onClick={() => setIsMobileMenuOpen(false)}
                 className="block text-foreground/80 hover:text-primary transition-colors duration-300 py-2"
               >
                 {item.label}
-              </a>
+              </HashLink>
             ))}
             <Button
               asChild
