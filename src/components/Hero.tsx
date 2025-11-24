@@ -26,7 +26,7 @@ const Hero = () => {
             </div>
 
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl">
-              Java Full Stack Developer | FinTech & Payment Systems | Spring Boot | Microservices | Kafka | MongoDB | ISO 20022 Expert | DB
+              Java Full Stack Developer | FinTech & Payment Systems | Spring Boot | Microservices | Kafka | MongoDB | ISO20022 Message | DB
             </p>
 
             <div className="flex flex-wrap gap-4 justify-center md:justify-start pt-4">
@@ -88,7 +88,7 @@ const Hero = () => {
               </div>
               <div className="flex items-center gap-2">
                 <span className="text-primary">📍</span>
-                <span>Chennai, India</span>
+                <span>Erode, India</span>
               </div>
               <div className="flex items-center gap-2">
                 <span className="text-primary">📞</span>
