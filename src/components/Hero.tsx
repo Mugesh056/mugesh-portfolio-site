@@ -1,24 +1,11 @@
-import { Download, Mail, Linkedin } from 'lucide-react';
+import { Download, Mail, Linkedin, FileText } from 'lucide-react';
+import { Link } from "react-router-dom";
 import { Button } from '@/components/ui/button';
 import profileImage from '@/assets/mugesh-profile.jpg';
 import { useNavigate } from "react-router-dom";
 
+
 const Hero = () => {
-  const navigate = useNavigate();
-
-  const handleHireMeClick = () => {
-    if (window.location.pathname !== "/") {
-      navigate("/", { replace: false });
-      setTimeout(() => {
-        const el = document.getElementById("contact");
-        if (el) el.scrollIntoView({ behavior: "smooth" });
-      }, 100);
-    } else {
-      const el = document.getElementById("contact");
-      if (el) el.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
   return (
     <section id="hero" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
       {/* Animated Background Elements */}
@@ -46,15 +33,7 @@ const Hero = () => {
             </p>
 
             <div className="flex flex-wrap gap-4 justify-center md:justify-start pt-4">
-              {/* Hire Me Button */}
-              <Button
-                size="lg"
-                className="bg-gradient-to-r from-primary to-secondary hover:opacity-90 animate-glow"
-                onClick={handleHireMeClick}
-              >
-                <Mail className="w-5 h-5 mr-2" />
-                Hire Me
-              </Button>
+             <Button asChild size="lg" className="bg-gradient-to-r from-primary to-secondary hover:opacity-90 animate-glow" > <Link to="/contact"> <Mail className="w-5 h-5 mr-2" /> Hire Me </Link> </Button>
 
               <Button
                 asChild
@@ -79,6 +58,8 @@ const Hero = () => {
                   LinkedIn
                 </a>
               </Button>
+
+           
             </div>
 
             {/* Contact Info */}
@@ -103,7 +84,10 @@ const Hero = () => {
           {/* Profile Image */}
           <div className="relative">
             <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96">
+              {/* Glow Effect */}
               <div className="absolute inset-0 bg-gradient-to-r from-primary to-secondary rounded-full blur-2xl opacity-30 animate-pulse"></div>
+              
+              {/* Image Container */}
               <div className="relative glass rounded-full p-2 animate-float">
                 <img
                   src={profileImage}
@@ -111,6 +95,8 @@ const Hero = () => {
                   className="w-full h-full object-cover rounded-full border-4 border-primary/30"
                 />
               </div>
+
+              {/* Decorative Circles */}
               <div className="absolute -top-4 -right-4 w-20 h-20 border-4 border-primary/30 rounded-full animate-spin-slow"></div>
               <div className="absolute -bottom-4 -left-4 w-16 h-16 border-4 border-secondary/30 rounded-full animate-spin-slow delay-500"></div>
             </div>
