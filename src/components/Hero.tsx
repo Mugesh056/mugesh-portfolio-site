@@ -26,7 +26,7 @@ const Hero = () => {
             </div>
 
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl">
-              Java Full Stack Developer | FinTech & Payment Systems | Spring Boot | Microservices | Kafka | MongoDB | ISO 20022 Expert
+              Java Full Stack Developer | FinTech & Payment Systems | Spring Boot | Microservices | Kafka | MongoDB | ISO 20022 Expert | DB
             </p>
 
             <div className="flex flex-wrap gap-4 justify-center md:justify-start pt-4">
