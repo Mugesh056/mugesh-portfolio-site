@@ -5,7 +5,7 @@ const Education = () => {
     {
       degree: 'B.E. Computer Science Engineering',
       institution: 'KSR College of Engineering',
-      grade: 'CGPA: 8.5',
+      grade: 'CGPA: 8.1',
       icon: GraduationCap,
     },
     {
