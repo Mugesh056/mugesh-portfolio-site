@@ -5,14 +5,14 @@ import { Badge } from '@/components/ui/badge';
 
 const Learning = () => {
   const cloudSkills = [
-    { name: 'AWS Cloud', progress: 75, icon: '☁️' },
-    { name: 'Azure Cloud Fundamentals', progress: 60, icon: '☁️' },
-    { name: 'Cloud Architecture Basics', progress: 70, icon: '☁️' },
-    { name: 'CI/CD Pipelines (GitLab, Jenkins)', progress: 85, icon: '⚙️' },
+    { name: 'AWS Cloud', progress: 5, icon: '☁️' },
+    { name: 'Azure Cloud Fundamentals', progress: 5, icon: '☁️' },
+    { name: 'Cloud Architecture Basics', progress: 0, icon: '☁️' },
+    { name: 'CI/CD Pipelines (GitLab, Jenkins)', progress: 60, icon: '⚙️' },
   ];
 
   const aiSkills = [
-    { name: 'Python for Automation & Backend', icon: '🧠', learning: true },
+    { name: 'Python for Automation & Backend', icon: '🧠', learning: false },
     { name: 'Machine Learning Basics', icon: '🤖', learning: true },
     { name: 'LLM & Generative AI Concepts', icon: '🧪', learning: false },
     { name: 'Prompt Engineering', icon: '🔍', learning: true },
