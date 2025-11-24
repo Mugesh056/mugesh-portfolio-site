@@ -2,6 +2,23 @@ import { Download, Mail, Linkedin, FileText } from 'lucide-react';
 import { Link } from "react-router-dom";
 import { Button } from '@/components/ui/button';
 import profileImage from '@/assets/mugesh-profile.jpg';
+import { useNavigate } from "react-router-dom";
+
+const Hero = () => {
+  const navigate = useNavigate();
+
+  const handleHireMeClick = () => {
+    if (window.location.pathname !== "/") {
+      navigate("/", { replace: false });
+      setTimeout(() => {
+        const el = document.getElementById("contact");
+        if (el) el.scrollIntoView({ behavior: "smooth" });
+      }, 100);
+    } else {
+      const el = document.getElementById("contact");
+      if (el) el.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
 const Hero = () => {
   return (
@@ -31,16 +48,14 @@ const Hero = () => {
             </p>
 
             <div className="flex flex-wrap gap-4 justify-center md:justify-start pt-4">
-             <Button
-  asChild
-  size="lg"
-  className="bg-gradient-to-r from-primary to-secondary hover:opacity-90 animate-glow"
->
-  <Link to="/contact">
-    <Mail className="w-5 h-5 mr-2" />
-    Hire Me
-  </Link>
-</Button>
+              <Button
+      size="lg"
+      className="bg-gradient-to-r from-primary to-secondary hover:opacity-90 animate-glow"
+      onClick={handleHireMeClick}
+    >
+      <Mail className="w-5 h-5 mr-2" />
+      Hire Me
+    </Button>
 
               <Button
                 asChild
