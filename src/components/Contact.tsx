@@ -30,12 +30,6 @@ const Contact = () => {
       link: 'https://www.linkedin.com/in/mugesh-gunasekaran',
       color: 'from-blue-500 to-blue-600',
     },
-    {
-      icon: FileText,
-      label: 'Naukri Profile',
-      link: 'https://www.naukri.com/',
-      color: 'from-purple-500 to-purple-600',
-    },
   ];
 
   return (
