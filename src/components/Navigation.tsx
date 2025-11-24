@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Menu, X, Download } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { HashLink } from 'react-router-hash-link';
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -16,12 +15,12 @@ const Navigation = () => {
   }, []);
 
   const navItems = [
-    { label: 'About', href: '#about' },
-    { label: 'Skills', href: '#skills' },
-    { label: 'Experience', href: '#experience' },
-    { label: 'Education', href: '#education' },
-    { label: 'Certifications', href: '#certifications' },
-    { label: 'Contact', href: '#contact' },
+    { label: 'About', href: '/#about' },
+    { label: 'Skills', href: '/#skills' },
+    { label: 'Experience', href: '/#experience' },
+    { label: 'Education', href: '/#education' },
+    { label: 'Certifications', href: '/#certifications' },
+    { label: 'Contact', href: '/#contact' },
   ];
 
   return (
@@ -32,21 +31,20 @@ const Navigation = () => {
     >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between">
-          <HashLink smooth to="#hero" className="text-2xl font-bold gradient-text">
+          <a href="/#hero" className="text-2xl font-bold gradient-text">
             MG
-          </HashLink>
+          </a>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
             {navItems.map((item) => (
-              <HashLink
+              <a
                 key={item.href}
-                smooth
-                to={item.href}
+                href={item.href}
                 className="text-foreground/80 hover:text-primary transition-colors duration-300 font-medium"
               >
                 {item.label}
-              </HashLink>
+              </a>
             ))}
             <Button
               asChild
@@ -73,15 +71,14 @@ const Navigation = () => {
         {isMobileMenuOpen && (
           <div className="md:hidden mt-4 glass rounded-lg p-4 space-y-4">
             {navItems.map((item) => (
-              <HashLink
+              <a
                 key={item.href}
-                smooth
-                to={item.href}
+                href={item.href}
                 onClick={() => setIsMobileMenuOpen(false)}
                 className="block text-foreground/80 hover:text-primary transition-colors duration-300 py-2"
               >
                 {item.label}
-              </HashLink>
+              </a>
             ))}
             <Button
               asChild
