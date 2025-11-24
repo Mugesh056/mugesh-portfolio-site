@@ -1,11 +1,13 @@
-import { Download, Mail, Linkedin, FileText } from 'lucide-react';
+import { Download, Mail, Linkedin } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import profileImage from '@/assets/mugesh-profile.jpg';
 
-
 const Hero = () => {
   return (
-    <section id="hero" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
+    <section
+      id="hero"
+      className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20"
+    >
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl animate-pulse"></div>
@@ -31,7 +33,16 @@ const Hero = () => {
             </p>
 
             <div className="flex flex-wrap gap-4 justify-center md:justify-start pt-4">
-             <Button asChild size="lg" className="bg-gradient-to-r from-primary to-secondary hover:opacity-90 animate-glow" > <Link to="/contact"> <Mail className="w-5 h-5 mr-2" /> Hire Me </Link> </Button>
+              <Button
+                asChild
+                size="lg"
+                className="bg-gradient-to-r from-primary to-secondary hover:opacity-90 animate-glow"
+              >
+                <a href="#contact">
+                  <Mail className="w-5 h-5 mr-2" />
+                  Hire Me
+                </a>
+              </Button>
 
               <Button
                 asChild
@@ -51,20 +62,25 @@ const Hero = () => {
                 variant="outline"
                 className="glass-hover border-primary/50"
               >
-                <a href="https://www.linkedin.com/in/mugesh-gunasekaran" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://www.linkedin.com/in/mugesh-gunasekaran"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <Linkedin className="w-5 h-5 mr-2" />
                   LinkedIn
                 </a>
               </Button>
-
-           
             </div>
 
             {/* Contact Info */}
             <div className="flex flex-wrap gap-6 justify-center md:justify-start pt-6 text-sm text-muted-foreground">
               <div className="flex items-center gap-2">
                 <Mail className="w-4 h-4 text-primary" />
-                <a href="mailto:mugeshaanoor@gmail.com" className="hover:text-primary transition-colors">
+                <a
+                  href="mailto:mugeshaanoor@gmail.com"
+                  className="hover:text-primary transition-colors"
+                >
                   mugeshaanoor@gmail.com
                 </a>
               </div>
@@ -84,7 +100,7 @@ const Hero = () => {
             <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96">
               {/* Glow Effect */}
               <div className="absolute inset-0 bg-gradient-to-r from-primary to-secondary rounded-full blur-2xl opacity-30 animate-pulse"></div>
-              
+
               {/* Image Container */}
               <div className="relative glass rounded-full p-2 animate-float">
                 <img
