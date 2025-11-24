@@ -4,33 +4,33 @@ const Skills = () => {
   const skillCategories = [
     {
       icon: Code2,
-      title: 'Programming',
-      skills: ['Java', 'JavaScript', 'XML'],
+      title: 'Core Programming',
+      skills: ['Java (Expert)', 'JavaScript', 'Object-Oriented Programming', 'Design Patterns'],
     },
     {
       icon: Server,
-      title: 'Frameworks & Backend',
-      skills: ['Spring Boot', 'REST API Development', 'Apache Camel', 'Microservices Architecture'],
+      title: 'Backend & Frameworks',
+      skills: ['Spring Boot (Advanced)', 'Spring Core', 'Spring MVC', 'Spring Data', 'RESTful API Development', 'Apache Camel', 'Microservices Architecture', 'Event-Driven Architecture'],
     },
     {
       icon: MessageSquare,
       title: 'Messaging & Streaming',
-      skills: ['Apache Kafka', 'ActiveMQ'],
+      skills: ['Apache Kafka', 'ActiveMQ', 'Message Queues', 'Real-time Data Processing'],
     },
     {
       icon: Database,
       title: 'Databases',
-      skills: ['MongoDB', 'MySQL'],
+      skills: ['MongoDB (Expert)', 'MySQL', 'Database Modeling', 'Query Optimization', 'Schema Design'],
     },
     {
       icon: GitBranch,
       title: 'DevOps & Tools',
-      skills: ['GitLab', 'Jenkins', 'Maven', 'CI/CD Pipelines', 'JIRA', 'VS Code', 'IntelliJ'],
+      skills: ['GitLab CI/CD', 'Jenkins Automation', 'Maven', 'Docker (Basics)', 'JIRA', 'IntelliJ IDEA', 'VS Code'],
     },
     {
       icon: Workflow,
-      title: 'Domain Expertise',
-      skills: ['ISO 20022', 'SWIFT MT/MX', 'Fedwire', 'RTGS', 'Payment Processing'],
+      title: 'Financial Messaging & Payments',
+      skills: ['ISO 20022 (PAIN/PACS/CAMT)', 'SWIFT MT/MX', 'Fedwire', 'RTGS', 'High-value Payment Flows', 'Cross-Border Transactions'],
     },
   ];
 
