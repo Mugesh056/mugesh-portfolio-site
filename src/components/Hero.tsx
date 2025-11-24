@@ -35,7 +35,7 @@ const Hero = () => {
                 size="lg"
                 className="bg-gradient-to-r from-primary to-secondary hover:opacity-90 animate-glow"
               >
-                <a href="#contact">
+                <a href="/contact">
                   <Mail className="w-5 h-5 mr-2" />
                   Hire Me
                 </a>
