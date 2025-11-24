@@ -5,12 +5,12 @@ const Skills = () => {
     {
       icon: Code2,
       title: 'Core Programming',
-      skills: ['Java (Expert)', 'JavaScript', 'Object-Oriented Programming', 'Design Patterns'],
+      skills: ['Java', 'JavaScript', 'Object-Oriented Programming'],
     },
     {
       icon: Server,
       title: 'Backend & Frameworks',
-      skills: ['Spring Boot (Advanced)', 'Spring Core', 'Spring MVC', 'Spring Data', 'RESTful API Development', 'Apache Camel', 'Microservices Architecture', 'Event-Driven Architecture'],
+      skills: ['Spring Boot', 'Spring Core', 'Spring MVC', 'Spring Data', 'RESTful API Development', 'Apache Camel', 'Microservices Architecture', 'Event-Driven Architecture'],
     },
     {
       icon: MessageSquare,
@@ -20,7 +20,7 @@ const Skills = () => {
     {
       icon: Database,
       title: 'Databases',
-      skills: ['MongoDB (Expert)', 'MySQL', 'Database Modeling', 'Query Optimization', 'Schema Design'],
+      skills: ['MongoDB', 'MySQL','Query Optimization', 'Schema Design'],
     },
     {
       icon: GitBranch,
