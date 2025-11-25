@@ -50,7 +50,7 @@ const Hero = () => {
                 variant="outline"
                 className="glass-hover border-primary/50"
               >
-                <a href="/mugesh-portfolio-site/Mugesh_Gunasekaran_Resume.pdff" download>
+                <a href="/mugesh-portfolio-site/Mugesh_Gunasekaran_Resume.pdf" download>
                   <Download className="w-5 h-5 mr-2" />
                   Download Resume
                 </a>
